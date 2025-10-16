@@ -181,18 +181,17 @@ contactForm.addEventListener('submit', (e) => {
             message: document.getElementById('message').value
         };
 
-        // Log form data (in production, send to server)
-        console.log('Form submitted:', formData);
+        // Get Google Form URL from data attribute
+        const googleFormUrl = contactForm.getAttribute('data-google-form-url');
 
-        // Show success message
-        contactForm.style.display = 'none';
-        formSuccess.style.display = 'block';
-
-        // Scroll to success message
-        formSuccess.scrollIntoView({ behavior: 'smooth' });
-
-        // Optional: Send to server
-        // sendFormData(formData);
+        if (googleFormUrl && googleFormUrl.trim() !== '') {
+            // Send to Google Forms
+            sendToGoogleForms(formData, googleFormUrl);
+        } else {
+            // If no Google Form URL is set, just show success
+            console.log('Form submitted (Google Form not configured yet):', formData);
+            showSuccessMessage();
+        }
     } else {
         // Scroll to first error
         const firstError = contactForm.querySelector('.error');
@@ -201,6 +200,43 @@ contactForm.addEventListener('submit', (e) => {
         }
     }
 });
+
+// Function to send data to Google Forms
+function sendToGoogleForms(formData, googleFormUrl) {
+    // Create form data object for Google Forms
+    const formDataObj = new FormData();
+
+    // Map your form fields to Google Form entry IDs
+    // You'll need to replace these entry IDs with your actual Google Form field IDs
+    formDataObj.append('entry.NAME_ENTRY_ID', formData.name);
+    formDataObj.append('entry.EMAIL_ENTRY_ID', formData.email);
+    formDataObj.append('entry.PHONE_ENTRY_ID', formData.phone);
+    formDataObj.append('entry.COMPANY_ENTRY_ID', formData.company);
+    formDataObj.append('entry.FLEET_ENTRY_ID', formData.fleetSize);
+    formDataObj.append('entry.SERVICE_ENTRY_ID', formData.service);
+    formDataObj.append('entry.MESSAGE_ENTRY_ID', formData.message);
+
+    // Send to Google Forms
+    fetch(googleFormUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formDataObj
+    })
+    .then(() => {
+        showSuccessMessage();
+    })
+    .catch((error) => {
+        console.error('Error submitting form:', error);
+        showSuccessMessage(); // Still show success even if there's an error (no-cors limitation)
+    });
+}
+
+// Function to show success message
+function showSuccessMessage() {
+    contactForm.style.display = 'none';
+    formSuccess.style.display = 'block';
+    formSuccess.scrollIntoView({ behavior: 'smooth' });
+}
 
 // Function to send form data to server (implement as needed)
 function sendFormData(data) {
