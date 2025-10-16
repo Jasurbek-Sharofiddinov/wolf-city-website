@@ -208,13 +208,13 @@ function sendToGoogleForms(formData, googleFormUrl) {
 
     // Map your form fields to Google Form entry IDs
     // You'll need to replace these entry IDs with your actual Google Form field IDs
-    formDataObj.append('entry.NAME_ENTRY_ID', formData.name);
-    formDataObj.append('entry.EMAIL_ENTRY_ID', formData.email);
-    formDataObj.append('entry.PHONE_ENTRY_ID', formData.phone);
-    formDataObj.append('entry.COMPANY_ENTRY_ID', formData.company);
-    formDataObj.append('entry.FLEET_ENTRY_ID', formData.fleetSize);
-    formDataObj.append('entry.SERVICE_ENTRY_ID', formData.service);
-    formDataObj.append('entry.MESSAGE_ENTRY_ID', formData.message);
+    formDataObj.append('entry.471813153', formData.name);
+    formDataObj.append('entry.323544813', formData.email);
+    formDataObj.append('entry.579979921', formData.phone);
+    formDataObj.append('entry.10697791', formData.company);
+    formDataObj.append('entry.496139621', formData.fleetSize);
+    formDataObj.append('entry.1125933071', formData.service);
+    formDataObj.append('entry.1342888067', formData.message);
 
     // Send to Google Forms
     fetch(googleFormUrl, {

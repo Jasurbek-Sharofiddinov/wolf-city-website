@@ -76,8 +76,17 @@ Add these questions in **SHORT ANSWER** format:
 4. Click **"Get Link"** at the bottom
 5. Copy the entire URL - it will look like:
    ```
-   https://docs.google.com/forms/d/e/FORM_ID/viewform?usp=pp_url&entry.123456789=test&entry.987654321=test@email.com...
+   https://docs.google.com/forms/d/e/1FAIpQLSceqi8cyUwPkvgTaSUjVtxn178PV1Yws36wpJvJ-pX3yeZKNg/viewform?usp=pp_url&
+   entry.
+   471813153=Jasurbek+&entry.
+   323544813=jasu@gmail.com&entry.
+   579979921=9999999999&entry.
+   10697791=jasur+inc&entry.
+   496139621=4&entry.
+   1125933071=all&entry.
+   1342888067=call+me+asap
    ```
+https://docs.google.com/forms/d/e/1FAIpQLSceqi8cyUwPkvgTaSUjVtxn178PV1Yws36wpJvJ-pX3yeZKNg/formResponse
 
 6. From this URL, extract the entry IDs:
    - Find `entry.XXXXXXXXX` numbers
