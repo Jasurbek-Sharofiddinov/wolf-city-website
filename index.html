@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf City - Professional Accounting for Trucking Companies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="12" fill="url(#logoGradient)"/>
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366F1"/>
+                                <stop offset="100%" style="stop-color:#8B5CF6"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M20 10L28 16L24 24L20 28L16 24L12 16L20 10Z" fill="white" opacity="0.9"/>
+                        <circle cx="20" cy="20" r="3" fill="white"/>
+                    </svg>
+                    <span>Wolf City</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#experts">Our Team</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="btn-primary">Get Started</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Professional Accounting Services for <span class="highlight">US Trucking Companies</span></h1>
+                    <p class="hero-subtitle">Focus on the road ahead while we handle your books. Expert financial management tailored specifically for the trucking industry.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary btn-large">Get Free Quote</a>
+                        <a href="#services" class="btn-secondary btn-large">View Services</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Trucking Companies Served</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-card analytics-dashboard">
+                        <div class="card-header">
+                            <span class="card-icon">📊</span>
+                            <span>Analytics Dashboard</span>
+                            <span class="live-indicator">● LIVE</span>
+                        </div>
+
+                        <!-- Key Metrics Grid -->
+                        <div class="analytics-metrics">
+                            <div class="metric-box">
+                                <div class="metric-label">Monthly Revenue</div>
+                                <div class="metric-value">$284K</div>
+                                <div class="metric-change positive">↑ 18.2%</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-label">Net Profit</div>
+                                <div class="metric-value">$62K</div>
+                                <div class="metric-change positive">↑ 12.5%</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-label">Operating Costs</div>
+                                <div class="metric-value">$198K</div>
+                                <div class="metric-change negative">↓ 5.3%</div>
+                            </div>
+                        </div>
+
+                        <!-- Trend Line Chart -->
+                        <div class="trend-chart">
+                            <div class="trend-line">
+                                <svg viewBox="0 0 300 100" class="chart-svg">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0.3" />
+                                            <stop offset="100%" style="stop-color:#2563EB;stop-opacity:0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Area under line -->
+                                    <path d="M 0 80 L 50 65 L 100 70 L 150 50 L 200 40 L 250 35 L 300 20 L 300 100 L 0 100 Z" fill="url(#gradient)"/>
+                                    <!-- Main line -->
+                                    <path d="M 0 80 L 50 65 L 100 70 L 150 50 L 200 40 L 250 35 L 300 20" stroke="#2563EB" stroke-width="3" fill="none"/>
+                                    <!-- Data points -->
+                                    <circle cx="50" cy="65" r="4" fill="#2563EB"/>
+                                    <circle cx="100" cy="70" r="4" fill="#2563EB"/>
+                                    <circle cx="150" cy="50" r="4" fill="#2563EB"/>
+                                    <circle cx="200" cy="40" r="4" fill="#2563EB"/>
+                                    <circle cx="250" cy="35" r="4" fill="#2563EB"/>
+                                    <circle cx="300" cy="20" r="5" fill="#2563EB" class="pulse"/>
+                                </svg>
+                            </div>
+                            <div class="trend-labels">
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+                            </div>
+                        </div>
+
+                        <!-- Performance Indicators -->
+                        <div class="performance-bars">
+                            <div class="performance-item">
+                                <div class="perf-label">
+                                    <span>Fleet Efficiency</span>
+                                    <span class="perf-value">87%</span>
+                                </div>
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width: 87%"></div>
+                                </div>
+                            </div>
+                            <div class="performance-item">
+                                <div class="perf-label">
+                                    <span>Cost Optimization</span>
+                                    <span class="perf-value">92%</span>
+                                </div>
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Financial Services</h2>
+                <p>Everything your trucking business needs to stay financially healthy and compliant</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Profit & Loss Reports</h3>
+                    <p>Detailed P&L statements that give you clear insights into your revenue, costs, and profitability by truck, driver, or route.</p>
+                    <ul class="service-features">
+                        <li>Monthly & quarterly reports</li>
+                        <li>Per-truck analysis</li>
+                        <li>Route profitability tracking</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Cash Flow Management</h3>
+                    <p>Stay on top of your cash flow with real-time tracking of receivables, payables, and operating expenses.</p>
+                    <ul class="service-features">
+                        <li>Real-time cash position</li>
+                        <li>Forecast modeling</li>
+                        <li>Payment tracking</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Financial Statements</h3>
+                    <p>Professional balance sheets, income statements, and cash flow statements prepared according to GAAP standards.</p>
+                    <ul class="service-features">
+                        <li>GAAP compliant</li>
+                        <li>Quarterly & annual statements</li>
+                        <li>Audit-ready documentation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Payroll Services</h3>
+                    <p>Complete payroll management for drivers and staff, including IFTA calculations, per diem, and compliance.</p>
+                    <ul class="service-features">
+                        <li>Driver settlements</li>
+                        <li>Tax withholding & filing</li>
+                        <li>Direct deposit setup</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚛</div>
+                    <h3>IFTA Reporting</h3>
+                    <p>Accurate IFTA tax calculations and quarterly filings to keep your fleet compliant across all jurisdictions.</p>
+                    <ul class="service-features">
+                        <li>Quarterly IFTA filings</li>
+                        <li>Mileage tracking</li>
+                        <li>Multi-state compliance</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Tax Preparation</h3>
+                    <p>Expert tax preparation and planning services specifically for trucking operations, maximizing deductions and minimizing liability.</p>
+                    <ul class="service-features">
+                        <li>Federal & state taxes</li>
+                        <li>Quarterly estimates</li>
+                        <li>Deduction optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transparent Pricing</h2>
+                <p>Choose the plan that fits your fleet size and needs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p class="pricing-subtitle">Perfect for owner-operators</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$299</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 1-3 Trucks</li>
+                        <li><span class="check">✓</span> Monthly P&L Reports</li>
+                        <li><span class="check">✓</span> Cash Flow Statements</li>
+                        <li><span class="check">✓</span> IFTA Reporting</li>
+                        <li><span class="check">✓</span> Basic Bookkeeping</li>
+                        <li><span class="check">✓</span> Email Support</li>
+                    </ul>
+                    <a href="#contact" class="btn-outline">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p class="pricing-subtitle">For growing fleets</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$599</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 4-10 Trucks</li>
+                        <li><span class="check">✓</span> Weekly P&L Reports</li>
+                        <li><span class="check">✓</span> Advanced Cash Flow Analysis</li>
+                        <li><span class="check">✓</span> IFTA & Tax Filing</li>
+                        <li><span class="check">✓</span> Full Bookkeeping</li>
+                        <li><span class="check">✓</span> Payroll Services (up to 10 employees)</li>
+                        <li><span class="check">✓</span> Priority Phone & Email Support</li>
+                        <li><span class="check">✓</span> Quarterly Tax Planning</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="pricing-subtitle">For large operations</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">Custom</span>
+                        <span class="price-period">pricing</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 11+ Trucks</li>
+                        <li><span class="check">✓</span> Real-time Reporting Dashboard</li>
+                        <li><span class="check">✓</span> Custom Financial Analysis</li>
+                        <li><span class="check">✓</span> Complete Tax Management</li>
+                        <li><span class="check">✓</span> Dedicated Account Manager</li>
+                        <li><span class="check">✓</span> Unlimited Payroll</li>
+                        <li><span class="check">✓</span> 24/7 Priority Support</li>
+                        <li><span class="check">✓</span> CFO Advisory Services</li>
+                        <li><span class="check">✓</span> Custom Integrations</li>
+                    </ul>
+                    <a href="#contact" class="btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experts Section -->
+    <section id="experts" class="experts">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Expert Team</h2>
+                <p>Licensed CPAs and financial specialists with deep trucking industry expertise</p>
+            </div>
+        </div>
+        <div class="experts-carousel-wrapper">
+            <div class="experts-carousel">
+                <!-- Expert 1 -->
+                <div class="expert-card">
+                    <div class="expert-image">JM</div>
+                    <div class="expert-name">Jennifer Martinez</div>
+                    <div class="expert-title">Senior Tax Accountant</div>
+                    <p class="expert-specialty">Specializes in trucking tax compliance and IFTA reporting with 12+ years experience in transportation finance.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPA</span>
+                        <span class="credential-badge">IFTA Certified</span>
+                    </div>
+                </div>
+
+                <!-- Expert 2 -->
+                <div class="expert-card">
+                    <div class="expert-image">DP</div>
+                    <div class="expert-name">David Patterson</div>
+                    <div class="expert-title">CFO Advisory Specialist</div>
+                    <p class="expert-specialty">Helps fleet owners optimize cash flow and profitability through strategic financial planning and analysis.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPA</span>
+                        <span class="credential-badge">MBA</span>
+                    </div>
+                </div>
+
+                <!-- Expert 3 -->
+                <div class="expert-card">
+                    <div class="expert-image">SK</div>
+                    <div class="expert-name">Sarah Kim</div>
+                    <div class="expert-title">Payroll Manager</div>
+                    <p class="expert-specialty">Expert in driver settlements, per diem calculations, and multi-state payroll compliance for trucking operations.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPP</span>
+                        <span class="credential-badge">FPC</span>
+                    </div>
+                </div>
+
+                <!-- Expert 4 -->
+                <div class="expert-card">
+                    <div class="expert-image">RW</div>
+                    <div class="expert-name">Robert Williams</div>
+                    <div class="expert-title">Financial Controller</div>
+                    <p class="expert-specialty">Manages full-cycle accounting for large trucking operations, ensuring accuracy and compliance across all jurisdictions.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPA</span>
+                        <span class="credential-badge">CMA</span>
+                    </div>
+                </div>
+
+                <!-- Expert 5 -->
+                <div class="expert-card">
+                    <div class="expert-image">LC</div>
+                    <div class="expert-name">Lisa Chen</div>
+                    <div class="expert-title">Bookkeeping Specialist</div>
+                    <p class="expert-specialty">Dedicated to maintaining accurate records for owner-operators and small fleets with personalized service.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">QuickBooks Pro</span>
+                        <span class="credential-badge">CB</span>
+                    </div>
+                </div>
+
+                <!-- Expert 6 -->
+                <div class="expert-card">
+                    <div class="expert-image">MJ</div>
+                    <div class="expert-name">Michael Johnson</div>
+                    <div class="expert-title">Tax Planning Director</div>
+                    <p class="expert-specialty">Develops strategic tax plans that maximize deductions and minimize liability for trucking businesses of all sizes.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPA</span>
+                        <span class="credential-badge">EA</span>
+                    </div>
+                </div>
+
+                <!-- Duplicate for infinite scroll effect -->
+                <div class="expert-card">
+                    <div class="expert-image">JM</div>
+                    <div class="expert-name">Jennifer Martinez</div>
+                    <div class="expert-title">Senior Tax Accountant</div>
+                    <p class="expert-specialty">Specializes in trucking tax compliance and IFTA reporting with 12+ years experience in transportation finance.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPA</span>
+                        <span class="credential-badge">IFTA Certified</span>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">DP</div>
+                    <div class="expert-name">David Patterson</div>
+                    <div class="expert-title">CFO Advisory Specialist</div>
+                    <p class="expert-specialty">Helps fleet owners optimize cash flow and profitability through strategic financial planning and analysis.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPA</span>
+                        <span class="credential-badge">MBA</span>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">SK</div>
+                    <div class="expert-name">Sarah Kim</div>
+                    <div class="expert-title">Payroll Manager</div>
+                    <p class="expert-specialty">Expert in driver settlements, per diem calculations, and multi-state payroll compliance for trucking operations.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPP</span>
+                        <span class="credential-badge">FPC</span>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">RW</div>
+                    <div class="expert-name">Robert Williams</div>
+                    <div class="expert-title">Financial Controller</div>
+                    <p class="expert-specialty">Manages full-cycle accounting for large trucking operations, ensuring accuracy and compliance across all jurisdictions.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPA</span>
+                        <span class="credential-badge">CMA</span>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">LC</div>
+                    <div class="expert-name">Lisa Chen</div>
+                    <div class="expert-title">Bookkeeping Specialist</div>
+                    <p class="expert-specialty">Dedicated to maintaining accurate records for owner-operators and small fleets with personalized service.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">QuickBooks Pro</span>
+                        <span class="credential-badge">CB</span>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">MJ</div>
+                    <div class="expert-name">Michael Johnson</div>
+                    <div class="expert-title">Tax Planning Director</div>
+                    <p class="expert-specialty">Develops strategic tax plans that maximize deductions and minimize liability for trucking businesses of all sizes.</p>
+                    <div class="expert-credentials">
+                        <span class="credential-badge">CPA</span>
+                        <span class="credential-badge">EA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by hundreds of trucking companies across the United States</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Wolf City completely transformed how we manage our finances. Their understanding of the trucking industry is unmatched. We've saved thousands in taxes and always know exactly where we stand financially."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <div class="author-name">Mike Johnson</div>
+                            <div class="author-company">Johnson Freight Lines</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"As an owner-operator, I used to spend hours on bookkeeping every week. Now I just send my receipts and focus on driving. The monthly reports help me make better business decisions."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Rodriguez</div>
+                            <div class="author-company">SR Transport LLC</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The IFTA reporting alone is worth the price. They handle everything perfectly and we've never had an issue with audits. Their team is always responsive and truly understands trucking."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DW</div>
+                        <div class="author-info">
+                            <div class="author-name">David Williams</div>
+                            <div class="author-company">Williams Transport Co.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"We've been with Wolf City for 3 years. Their payroll service handles all our driver settlements flawlessly, and their tax planning has saved us a significant amount of money."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LC</div>
+                        <div class="author-info">
+                            <div class="author-name">Lisa Chen</div>
+                            <div class="author-company">Pacific Logistics Group</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Professional, reliable, and they actually care about our success. The real-time cash flow reports have been a game-changer for managing our growing fleet."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TB</div>
+                        <div class="author-info">
+                            <div class="author-name">Tom Bradley</div>
+                            <div class="author-company">Bradley Trucking Inc.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Finally, accountants who speak our language! They understand per diem, detention pay, and all the complexities of trucking finances. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RM</div>
+                        <div class="author-info">
+                            <div class="author-name">Robert Martinez</div>
+                            <div class="author-company">Martinez Hauling LLC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get Started Today</h2>
+                    <p class="contact-subtitle">Ready to simplify your trucking accounting? Fill out the form and we'll get back to you within 24 hours with a custom quote.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">(800) 555-BOOK</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@wolfcity.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <div class="contact-label">Office</div>
+                                <div class="contact-value">Chicago, IL</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div>
+                                <div class="contact-label">Hours</div>
+                                <div class="contact-value">Mon-Fri: 8am - 6pm CST</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <div class="badge-icon">🔒</div>
+                            <div class="badge-text">100% Secure</div>
+                        </div>
+                        <div class="trust-badge">
+                            <div class="badge-icon">✓</div>
+                            <div class="badge-text">IFTA Certified</div>
+                        </div>
+                        <div class="trust-badge">
+                            <div class="badge-icon">👔</div>
+                            <div class="badge-text">Licensed CPAs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fleet-size">Fleet Size *</label>
+                                <select id="fleet-size" name="fleet-size" required>
+                                    <option value="">Select fleet size</option>
+                                    <option value="1-3">1-3 trucks</option>
+                                    <option value="4-10">4-10 trucks</option>
+                                    <option value="11-25">11-25 trucks</option>
+                                    <option value="26-50">26-50 trucks</option>
+                                    <option value="50+">50+ trucks</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Services Interested In *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="full-service">Full Service Package</option>
+                                    <option value="bookkeeping">Bookkeeping Only</option>
+                                    <option value="payroll">Payroll Services</option>
+                                    <option value="ifta">IFTA Reporting</option>
+                                    <option value="tax">Tax Preparation</option>
+                                    <option value="other">Other / Not Sure</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your specific needs..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-large">Get Your Free Quote</button>
+
+                        <p class="form-privacy">By submitting this form, you agree to our privacy policy. We'll never share your information.</p>
+                    </form>
+
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Thank You!</h3>
+                        <p>We've received your information and will contact you within 24 hours with a custom quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="12" fill="url(#logoGradient2)"/>
+                            <defs>
+                                <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366F1"/>
+                                    <stop offset="100%" style="stop-color:#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M20 10L28 16L24 24L20 28L16 24L12 16L20 10Z" fill="white" opacity="0.9"/>
+                            <circle cx="20" cy="20" r="3" fill="white"/>
+                        </svg>
+                        <span>Wolf City</span>
+                    </div>
+                    <p>Professional accounting services tailored specifically for US trucking companies.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Profit & Loss Reports</a></li>
+                        <li><a href="#services">Cash Flow Management</a></li>
+                        <li><a href="#services">Payroll Services</a></li>
+                        <li><a href="#services">IFTA Reporting</a></li>
+                        <li><a href="#services">Tax Preparation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>(800) 555-BOOK</li>
+                        <li>info@wolfcity.com</li>
+                        <li>Chicago, IL</li>
+                        <li>Mon-Fri: 8am - 6pm CST</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wolf City. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
