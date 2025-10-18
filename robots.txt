@@ -1,0 +1,13 @@
+# Wolf City - Robots.txt
+User-agent: *
+Allow: /
+
+# Disallow private directories
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://wolfcity.com/sitemap.xml
+
+# Crawl delay (optional - helps reduce server load)
+Crawl-delay: 1
