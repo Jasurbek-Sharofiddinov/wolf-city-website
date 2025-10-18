@@ -1219,6 +1219,151 @@ body {
     color: var(--primary-color);
 }
 
+/* Tools Section */
+.tools-section {
+    padding: 80px 0;
+    background: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 48px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tool-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.tool-logo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.tool-logo img {
+    max-width: 100%;
+    max-height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.tool-logo:hover img {
+    filter: grayscale(0%);
+}
+
+/* Special Offer Banner */
+.special-offer-banner {
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 50%, #EA580C 100%);
+    border-radius: 24px;
+    padding: 48px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 64px;
+    box-shadow: 0 30px 60px -12px rgba(245, 158, 11, 0.4), 0 18px 36px -18px rgba(245, 158, 11, 0.3);
+    position: relative;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    animation: banner-pulse 3s ease-in-out infinite;
+}
+
+@keyframes banner-pulse {
+    0%, 100% {
+        box-shadow: 0 30px 60px -12px rgba(245, 158, 11, 0.4), 0 18px 36px -18px rgba(245, 158, 11, 0.3);
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 35px 70px -12px rgba(245, 158, 11, 0.5), 0 20px 40px -18px rgba(245, 158, 11, 0.4);
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.special-offer-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.offer-badge {
+    background: rgba(255, 255, 255, 0.95);
+    color: #EA580C;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: badge-shimmer 2s ease-in-out infinite;
+}
+
+@keyframes badge-shimmer {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.offer-content {
+    flex: 1;
+    color: white;
+}
+
+.offer-content h3 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    color: white;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    letter-spacing: -0.5px;
+}
+
+.offer-content p {
+    font-size: 18px;
+    opacity: 0.98;
+    margin: 0;
+    font-weight: 500;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.special-offer-banner .btn-primary {
+    background: white;
+    color: #EA580C;
+    white-space: nowrap;
+    font-weight: 800;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    padding: 18px 36px;
+}
+
+.special-offer-banner .btn-primary:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    background: white;
+    color: #EA580C;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .services-grid {
@@ -1250,6 +1395,11 @@ body {
         padding: 20px;
     }
 
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
     .pricing-grid {
         grid-template-columns: 1fr;
         max-width: 500px;
@@ -1269,6 +1419,12 @@ body {
 
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .special-offer-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px;
     }
 }
 
@@ -1302,6 +1458,11 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
@@ -1322,6 +1483,14 @@ body {
         flex-direction: column;
         gap: 16px;
         text-align: center;
+    }
+
+    .offer-content h3 {
+        font-size: 24px;
+    }
+
+    .offer-content p {
+        font-size: 14px;
     }
 }
 
