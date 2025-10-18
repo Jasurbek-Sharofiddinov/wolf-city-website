@@ -326,6 +326,11 @@ buttons.forEach(button => {
             return; // Let form handle submit buttons
         }
 
+        // Don't add ripple effect to anchor links
+        if (this.tagName === 'A' && this.getAttribute('href')?.startsWith('#')) {
+            return; // Let smooth scroll handle anchor links
+        }
+
         const ripple = document.createElement('span');
         const rect = this.getBoundingClientRect();
         const size = Math.max(rect.width, rect.height);
