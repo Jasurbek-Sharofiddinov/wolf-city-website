@@ -94,6 +94,18 @@ body {
     color: var(--primary-color);
 }
 
+/* Navbar buttons styling */
+.nav-menu .btn-primary,
+.nav-menu .btn-secondary {
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.nav-menu .btn-primary:hover,
+.nav-menu .btn-secondary:hover {
+    color: white;
+}
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
